@@ -1,28 +1,19 @@
 import { RouteLinks } from "./RouteLink";
 import Dashboard from "../Pages/Dashboard";
-import Login from "../Pages/Login";
 import CreateMarketer from "../Pages/CreateMarketer";
 import MarketerDetails from "../Pages/MarketerDetails";
-import Dashboard from "../features/Dashboard/index";
 
 export const DashboardRoute = [
   {
     component: <Dashboard />,
-    path: RouteLinks.overview,
+    path: RouteLinks.dashboard,
   },
   {
-    component: <Agents />,
-    path: RouteLinks.agent,
+    component: <CreateMarketer />,
+    path: RouteLinks.createmarketer,
   },
   {
-    component: <Profile />,
-    path: RouteLinks.profile,
+    component: <MarketerDetails/>,
+    path: RouteLinks.marketerdetails,
   },
 ];
-
-// export const AuthRoute = [
-//   {
-//     component: <SignIn />,
-//     path: RouteLinks.signin,
-//   },
-// ];
